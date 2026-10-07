@@ -36,11 +36,12 @@
         <plexus-utils.version>4.0.3</plexus-utils.version>
         <maven-shade.plexus-utils.version>3.6.1</maven-shade.plexus-utils.version>
         <maven.shade.plugin.version>3.6.2</maven.shade.plugin.version>
+        <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
         <httpcore5.version>5.4.3</httpcore5.version>
         <httpclient5.version>5.6.3</httpclient5.version>
         <maven.deploy.skip>false</maven.deploy.skip>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -293,6 +294,16 @@
     <build>
         <finalName>${project.name}-v${project.version}</finalName>
         <defaultGoal>clean package</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <release>${maven.compiler.release}</release>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>

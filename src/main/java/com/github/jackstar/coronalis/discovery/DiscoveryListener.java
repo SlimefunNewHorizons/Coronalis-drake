@@ -7,7 +7,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
 import com.github.jackstar.coronalis.Coronalis;
-import com.github.drakescraft_labs.slimefun4.api.events.ResearchUnlockEvent;
+import io.github.thebusybiscuit.slimefun4.api.events.ResearchUnlockEvent;
 
 /**
  * Bonus de XP al desbloquear investigaciones del addon.

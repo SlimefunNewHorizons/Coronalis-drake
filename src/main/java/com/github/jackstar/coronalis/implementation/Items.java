@@ -1,6 +1,6 @@
 package com.github.jackstar.coronalis.implementation;
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;

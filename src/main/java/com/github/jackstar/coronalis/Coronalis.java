@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.github.drakescraft_labs.labupdate.DrakesLabsReleaseUpdate;
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import com.github.jackstar.coronalis.discovery.DiscoveryListener;
 import com.github.jackstar.coronalis.discovery.DiscoveryService;
 import com.github.jackstar.coronalis.commands.CoronalisCommand;

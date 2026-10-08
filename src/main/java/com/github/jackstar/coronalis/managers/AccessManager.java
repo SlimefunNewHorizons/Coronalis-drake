@@ -1,7 +1,7 @@
 package com.github.jackstar.coronalis.managers;
 
 import com.github.jackstar.coronalis.Coronalis;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

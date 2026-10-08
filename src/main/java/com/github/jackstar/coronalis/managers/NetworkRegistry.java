@@ -3,7 +3,7 @@ package com.github.jackstar.coronalis.managers;
 import com.github.jackstar.coronalis.Coronalis;
 import com.github.jackstar.coronalis.implementation.data.CoronalisNetwork;
 import com.github.jackstar.coronalis.implementation.data.TelescopeState;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;

@@ -12,10 +12,10 @@ import com.github.jackstar.coronalis.implementation.items.ArrayNetworkBlock;
 import com.github.jackstar.coronalis.implementation.items.ControlConsole;
 import com.github.jackstar.coronalis.implementation.items.DataRecordItem;
 import com.github.jackstar.coronalis.implementation.items.RadioTelescope;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.api.researches.Research;
 
 public class ItemSetup {
 

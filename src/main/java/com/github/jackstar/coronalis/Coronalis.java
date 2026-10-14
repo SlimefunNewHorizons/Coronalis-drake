@@ -7,7 +7,6 @@ import javax.annotation.Nonnull;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.github.drakescraft_labs.labupdate.DrakesLabsReleaseUpdate;
 import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
 import com.github.jackstar.coronalis.discovery.DiscoveryListener;
 import com.github.jackstar.coronalis.discovery.DiscoveryService;
@@ -33,7 +32,6 @@ public class Coronalis extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        DrakesLabsReleaseUpdate.schedule(this, "Coronalis-drake");
         instance = this;
 
         if (!new File(getDataFolder(), "config.yml").exists()) {

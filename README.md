@@ -3,24 +3,30 @@
 <h1 align="center">Coronalis</h1>
 
 <p align="center">
-  <strong>Addon Slimefun de radioastronomía, interferometría y descubrimientos con XP</strong><br/>
-  Proyecto original de <a href="https://github.com/JackStar6677-1">JackStar6677</a> para Paper 1.21 — sin vínculo con simuladores de escritorio ni marcas de terceros.
+  <strong>Ecosistema de Radioastronomía Profunda, Eventos Paranormales & Protocolo SCP</strong><br/>
+  Proyecto original de <a href="https://github.com/JackStar6677-1">JackStar6677</a> para Paper/Purpur 1.21.11+ y 26.x — Modernizado con modelos 3D Display, interferometría cuántica y señales del espacio exterior.
 </p>
 
 <p align="center">
   <a href="https://github.com/JackStar6677-1/Coronalis"><img src="https://img.shields.io/badge/Repositorio-Coronalis-8a2be2?style=for-the-badge" alt="Repo"/></a>
-  <img src="https://img.shields.io/badge/Paper-1.21.1-41c5ff?style=for-the-badge" alt="Paper"/>
-  <img src="https://img.shields.io/badge/Slimefun-6%20Drake-7c3aed?style=for-the-badge" alt="Slimefun"/>
-  <img src="https://img.shields.io/badge/Java-21-orange?style=for-the-badge" alt="Java 21"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11%20%2F%2026.2-41c5ff?style=for-the-badge" alt="Paper"/>
+  <img src="https://img.shields.io/badge/StarSuites-Drakes--Magic-7c3aed?style=for-the-badge" alt="StarSuites"/>
+  <img src="https://img.shields.io/badge/3D%20Display-Pylon%20%26%20DisplaySuit-10b981?style=for-the-badge" alt="3D Display"/>
+  <img src="https://img.shields.io/badge/Lore-SCP%20%26%20Paranormal-ef4444?style=for-the-badge" alt="SCP Lore"/>
+  <img src="https://img.shields.io/badge/Java-21%20%2F%2025-orange?style=for-the-badge" alt="Java"/>
 </p>
 
 ---
 
-## Qué es Coronalis
+## 🛸 Qué es Coronalis (Y su Gran Evolución)
 
-**Coronalis** convierte tu mundo de Minecraft en un observatorio de radio interferométrico: montas antenas, enlazas una consola de correlación, apuntas a objetivos del cielo profundo y ganas **XP de Minecraft** cada vez que catalogas una señal por primera vez.
+**Coronalis** nació como un observatorio de radio interferométrico (`Escucha del Vacío`), donde los astrónomos montan antenas parabólicas, correlacionan señales cósmicas y catalogan el cielo profundo.
 
-El nombre sigue la línea de proyectos Jack (**AuroralisStar**, **VoidWhisper**, **StellarDaybook**): compuesto inventado, memorable y sin colisionar con IPs ajenas.
+Hoy, Coronalis evoluciona a un **motor de eventos extraterrestres y contención paranormal estilo Fundación SCP**:
+- **🔭 Radioastronomía Realista:** Escucha púlsares, cuásares, exoplanetas y agujeros negros con algoritmos PID y correlación por interferometría VLBI.
+- **📡 Modelos 3D Procedurales con BlockDisplay / ItemDisplay:** Inspirados en la técnica `DisplaySuit` de Chagui68 (`MultiverseCreatures`) y los componentes dinámicos de `Pylon-Drake`: las antenas parabólicas cuentan con platos articulados que rotan físicamente en tiempo real buscando el azimut y elevación celeste, mientras que la consola proyecta hologramas volumétricos interactivos.
+- **👾 Señales Anómalas & Brechas SCP:** No todas las señales del espacio son naturales. Algunas transmisiones contienen frecuencias meméticas (SCP-2399, balizas alienígenas, coordenadas de flotas hostiles) que desatan eventos paranormales globales, distorsiones electromagnéticas y visitas de entidades no humanas en el mundo.
+- **📄 Especificación de Expansión:** Consulta el documento canónico de diseño en [`docs/CORONALIS_SCP_EXPANSION_SPEC.md`](docs/CORONALIS_SCP_EXPANSION_SPEC.md).
 
 | Concepto | En el juego |
 |----------|-------------|

@@ -2,10 +2,14 @@ package com.github.jackstar.coronalis.managers;
 
 import com.github.jackstar.coronalis.Coronalis;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitTask;
 
 import javax.annotation.Nonnull;
 import java.util.Random;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 
 /**
@@ -139,17 +143,41 @@ public class CosmicEventManager {
         this.eventEndMs  = System.currentTimeMillis() + (seconds * 1000L);
 
         String prefix = "§5§l[✦ Coronalis] §r";
-        Bukkit.broadcastMessage(prefix + event.announcement);
-        Bukkit.broadcastMessage("§8  └─ §7Duración del evento: §e" + seconds + " segundos.");
+        announce(prefix + event.announcement);
+        announce("§8  └─ §7Duración del evento: §e" + seconds + " segundos.");
 
         // Expiración automática
         Bukkit.getScheduler().runTaskLater(Coronalis.instance(), () -> {
             if (this.activeEvent == event) {
                 clearEvent();
-                Bukkit.broadcastMessage(prefix + "§7Evento §e" + event.displayName
+                announce(prefix + "§7Evento §e" + event.displayName
                     + " §7finalizado. Condiciones de observación restauradas.");
             }
         }, (long) seconds * 20L);
+    }
+
+    // ── Anuncios ─────────────────────────────────────────────────────────────
+
+    /** Jugadores que usaron una consola de Coronalis desde el arranque. */
+    private final Set<UUID> users = ConcurrentHashMap.newKeySet();
+
+    /** Marca a un jugador como usuario del addon (recibe las alertas cósmicas). */
+    public void markUser(@Nonnull Player player) {
+        users.add(player.getUniqueId());
+    }
+
+    /**
+     * Envía un anuncio cósmico según {@code cosmic-events.announce}:
+     * {@code none} no avisa a nadie, {@code all} avisa a todos y {@code users} (por defecto)
+     * solo a quien usó una consola o tiene el permiso {@code coronalis.alerts}. Nunca va a consola.
+     */
+    private void announce(@Nonnull String message) {
+        String mode = Coronalis.instance().getConfig().getString("cosmic-events.announce", "users");
+        if ("none".equalsIgnoreCase(mode)) return;
+        boolean all = "all".equalsIgnoreCase(mode);
+        for (Player p : Bukkit.getOnlinePlayers()) {
+            if (all || users.contains(p.getUniqueId()) || p.hasPermission("coronalis.alerts")) p.sendMessage(message);
+        }
     }
 
     /** Limpia el evento activo sin anuncio. */

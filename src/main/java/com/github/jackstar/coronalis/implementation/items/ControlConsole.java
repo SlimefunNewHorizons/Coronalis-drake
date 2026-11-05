@@ -190,6 +190,7 @@ public class ControlConsole extends SlimefunItem implements InventoryBlock, Ener
 
             @Override
             public boolean canOpen(@Nonnull Block b, @Nonnull Player p) {
+                Coronalis.instance().getCosmicEventManager().markUser(p);
                 if (!p.hasPermission("slimefun.inventory.bypass")
                     && !io.github.thebusybiscuit.slimefun4.implementation.Slimefun
                         .getProtectionManager().hasPermission(p, b, Interaction.INTERACT_BLOCK)) {

@@ -16,3 +16,6 @@ permissions:
   coronalis.admin:
     description: Permite administrar cualquier consola Coronalis.
     default: op
+  coronalis.alerts:
+    description: Recibe las alertas de eventos cosmicos aunque no haya usado una consola.
+    default: false

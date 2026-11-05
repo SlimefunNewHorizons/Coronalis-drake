@@ -31,6 +31,8 @@ cosmic-events:
   # Duración mínima / máxima en segundos
   min-duration-seconds: 60
   max-duration-seconds: 180
+  # Quién ve las alertas: users (quien usó una consola o tiene coronalis.alerts), all o none
+  announce: users
 
 # XP bonus al desbloquear una investigación Slimefun
 research-unlock-bonus-xp: 10
